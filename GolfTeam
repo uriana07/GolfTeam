@@ -1,0 +1,17 @@
+// Программа для создания и управления списком команд по гольфу
+class GolfTeam {
+    constructor(name, players) {
+        this.name = name;
+        this.players = players;
+    }
+
+    getTeamInfo() {
+        return `Команда: ${this.name}, Количество игроков: ${this.players.length}`;
+    }
+}
+
+const teamA = new GolfTeam("Команда A", ["Игрок1", "Игрок2", "Игрок3"]);
+const teamB = new GolfTeam("Команда B", ["Игрок4", "Игрок5", "Игрок6"]);
+
+console.log(teamA.getTeamInfo());
+console.log(teamB.getTeamInfo());
